@@ -221,7 +221,8 @@
         .hero {
             padding: 240px 5% 160px;
             text-align: center;
-            background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+            background: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), 
+                        url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
             position: relative;
             overflow: hidden;
             min-height: 100vh;
@@ -281,32 +282,6 @@
             gap: 25px;
             justify-content: center;
             margin-top: 40px;
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 80px;
-            flex-wrap: wrap;
-        }
-
-        .hero-stat {
-            text-align: center;
-        }
-
-        .hero-stat h3 {
-            font-size: 2.5rem;
-            color: white;
-            margin-bottom: 5px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-stat p {
-            font-size: 1.1rem;
-            color: var(--light-text);
         }
 
         /* Services Section - Enhanced */
@@ -563,18 +538,15 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
             margin-top: 60px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .stat-card {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            padding: 60px 40px;
+            padding: 60px 30px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: var(--transition);
@@ -587,20 +559,20 @@
         }
 
         .counter {
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-weight: 700;
             margin: 10px 0;
             color: white;
         }
 
         .stat-card p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             opacity: 0.9;
             margin-top: 10px;
             color: white;
         }
 
-        /* Contact Section */
+        /* Contact Section - Enhanced */
         .contact {
             background: var(--bg-color);
             position: relative;
@@ -1008,6 +980,10 @@
             .testimonials-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 992px) {
@@ -1076,6 +1052,10 @@
                 width: 50px;
                 height: 50px;
                 font-size: 1.2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1158,20 +1138,6 @@
             <div class="hero-btns">
                 <a href="#contact" class="btn">Get Started</a>
                 <a href="#services" class="btn btn-secondary">Our Services</a>
-            </div>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <h3>50+</h3>
-                    <p>Successful Projects</p>
-                </div>
-                <div class="hero-stat">
-                    <h3>45+</h3>
-                    <p>Satisfied Clients</p>
-                </div>
-                <div class="hero-stat">
-                    <h3>100%</h3>
-                    <p>Client Retention</p>
-                </div>
             </div>
         </div>
     </section>
@@ -1349,12 +1315,20 @@
             </div>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="counter">50+</div>
+                    <div class="counter" data-target="50">0</div>
                     <p>Projects Completed</p>
                 </div>
                 <div class="stat-card">
-                    <div class="counter">45+</div>
+                    <div class="counter" data-target="45">0</div>
                     <p>Satisfied Clients</p>
+                </div>
+                <div class="stat-card">
+                    <div class="counter" data-target="100">0</div>
+                    <p>Client Retention</p>
+                </div>
+                <div class="stat-card">
+                    <div class="counter" data-target="25">0</div>
+                    <p>Industry Awards</p>
                 </div>
             </div>
         </div>
@@ -1445,6 +1419,7 @@
                                 <div class="contact-details">
                                     <h4>Working Hours</h4>
                                     <p>Monday - Friday: 9AM - 6PM</p>
+                                    <p>Saturday: 10AM - 2PM</p>
                                 </div>
                             </div>
                         </div>
@@ -1608,6 +1583,40 @@
                 }
             });
         });
+
+        // Counter animation for achievements
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // The lower the faster
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if(count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+
+        // Initialize counter animation when achievements section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const achievementsSection = document.querySelector('.achievements');
+        if (achievementsSection) {
+            observer.observe(achievementsSection);
+        }
     </script>
 </body>
 </html>
