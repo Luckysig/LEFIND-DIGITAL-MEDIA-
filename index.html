@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeFind Digital Media | Premium Digital Marketing Solutions</title>
+    <title>Clickdera | Premium Digital Marketing Solutions</title>
     <meta name="description" content="Transform your digital presence with our expert digital marketing services including influencer marketing, social media management, and web development.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,15 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2563eb;
-            --primary-dark: #1e40af;
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
             --secondary-color: #F59E0B;
             --accent-color: #10B981;
-            --text-color: #1F2937;
-            --light-text: #6B7280;
-            --bg-color: #F8FAFC;
-            --dark-bg: #111827;
-            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --text-color: #E5E7EB;
+            --light-text: #9CA3AF;
+            --bg-color: #111827;
+            --dark-bg: #1F2937;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
             --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
@@ -40,6 +40,7 @@
         h1, h2, h3, h4 {
             font-weight: 700;
             line-height: 1.3;
+            color: white;
         }
 
         p {
@@ -54,7 +55,7 @@
         }
 
         .section {
-            padding: 80px 0;
+            padding: 100px 0;
         }
 
         .section-title {
@@ -64,9 +65,9 @@
         }
 
         .section-title h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 15px;
-            color: var(--text-color);
+            color: white;
         }
 
         .section-title p {
@@ -89,7 +90,7 @@
 
         .btn {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 14px 32px;
             background: var(--primary-color);
             color: white;
             border-radius: 50px;
@@ -104,7 +105,7 @@
         .btn:hover {
             background: var(--primary-dark);
             transform: translateY(-3px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
         }
 
         .btn-secondary {
@@ -118,8 +119,8 @@
         /* Navigation */
         nav {
             padding: 20px 5%;
-            background: white;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            background: var(--dark-bg);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
@@ -129,7 +130,7 @@
 
         nav.scrolled {
             padding: 15px 5%;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
         }
 
         .nav-container {
@@ -143,6 +144,10 @@
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
+            color: white;
+        }
+
+        .logo span {
             color: var(--primary-color);
         }
 
@@ -169,14 +174,15 @@
             position: absolute;
             right: 5%;
             top: 100%;
-            background: white;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: var(--dark-bg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             border-radius: 12px;
             display: none;
             min-width: 250px;
             z-index: 1001;
             padding: 15px 0;
             overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .dropdown-menu.active {
@@ -196,8 +202,9 @@
         }
 
         .menu-item:hover {
-            background: #f1f5f9;
+            background: rgba(255, 255, 255, 0.05);
             padding-left: 25px;
+            color: white;
         }
 
         .menu-item i {
@@ -208,9 +215,9 @@
 
         /* Hero Section */
         .hero {
-            padding: 180px 5% 100px;
+            padding: 200px 5% 120px;
             text-align: center;
-            background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+            background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
             position: relative;
             overflow: hidden;
         }
@@ -222,7 +229,7 @@
             right: -20%;
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0) 70%);
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, rgba(99, 102, 241, 0) 70%);
             z-index: 0;
         }
 
@@ -234,14 +241,14 @@
         }
 
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
-            color: var(--text-color);
+            color: white;
             line-height: 1.2;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             margin-bottom: 40px;
             max-width: 700px;
             margin-left: auto;
@@ -255,31 +262,36 @@
             margin-top: 30px;
         }
 
-        /* Services Section */
+        /* Services Section - Enhanced */
         .services {
-            background: white;
+            background: var(--bg-color);
             position: relative;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
         }
 
         .service-card {
-            background: white;
+            background: var(--dark-bg);
             padding: 40px 30px;
             border-radius: 16px;
             box-shadow: var(--card-shadow);
             transition: var(--transition);
             text-align: center;
-            border: 1px solid rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
         }
 
         .service-icon {
@@ -303,7 +315,160 @@
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
-            color: var(--text-color);
+            color: white;
+        }
+
+        .service-card p {
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .service-card .service-btn {
+            margin-top: auto;
+            padding: 10px 20px;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary-color);
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+
+        .service-card .service-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Process Section - Enhanced */
+        .process {
+            background: var(--bg-color);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            position: relative;
+        }
+
+        .process-step {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: -30px;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            z-index: 1;
+        }
+
+        .step-content {
+            background: var(--dark-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            height: 100%;
+        }
+
+        .step-content h3 {
+            margin-bottom: 15px;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        /* Testimonials Section - Enhanced */
+        .testimonials {
+            background: var(--bg-color);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: var(--dark-bg);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(99, 102, 241, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--light-text);
         }
 
         /* Achievements Section */
@@ -380,105 +545,7 @@
             color: white;
         }
 
-        /* Testimonials Section */
-        .testimonials {
-            background: var(--bg-color);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: var(--card-shadow);
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 5rem;
-            color: rgba(37, 99, 235, 0.1);
-            font-family: serif;
-            line-height: 1;
-        }
-
-        .testimonial-content {
-            position: relative;
-            z-index: 1;
-            margin-bottom: 20px;
-        }
-
-        /* Process Section */
-        .process {
-            background: white;
-        }
-
-        .process-steps {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .process-steps::before {
-            content: '';
-            position: absolute;
-            left: 30px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
-            border-radius: 2px;
-        }
-
-        .process-step {
-            display: flex;
-            gap: 20px;
-            position: relative;
-            padding-left: 70px;
-        }
-
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 700;
-            font-size: 1.5rem;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 1;
-        }
-
-        .step-content {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-            flex: 1;
-        }
-
-        .step-content h3 {
-            margin-bottom: 10px;
-            color: var(--text-color);
-        }
-
-        /* Contact Section - Improved */
+        /* Contact Section */
         .contact {
             background: var(--bg-color);
             position: relative;
@@ -491,7 +558,7 @@
             left: 0;
             right: 0;
             height: 100px;
-            background: linear-gradient(to bottom, rgba(248, 250, 252, 1), rgba(248, 250, 252, 0));
+            background: linear-gradient(to bottom, rgba(17, 24, 39, 1), rgba(17, 24, 39, 0));
             z-index: 0;
         }
 
@@ -511,19 +578,21 @@
         }
 
         .contact-form {
-            background: white;
+            background: var(--dark-bg);
             padding: 40px 30px;
             border-radius: 16px;
             box-shadow: var(--card-shadow);
             height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .contact-info-card {
-            background: white;
+            background: var(--dark-bg);
             padding: 30px;
             border-radius: 16px;
             box-shadow: var(--card-shadow);
             height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .contact-info-card h3 {
@@ -555,7 +624,7 @@
         }
 
         .contact-info-item:hover {
-            background: rgba(37, 99, 235, 0.05);
+            background: rgba(99, 102, 241, 0.05);
         }
 
         .contact-icon {
@@ -574,7 +643,7 @@
         .contact-details h4 {
             font-size: 1.1rem;
             margin-bottom: 5px;
-            color: var(--text-color);
+            color: white;
         }
 
         .contact-details p, .contact-details a {
@@ -596,22 +665,24 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
-            color: var(--text-color);
+            color: white;
         }
 
         .form-control {
             width: 100%;
             padding: 12px 15px;
-            border: 1px solid #E5E7EB;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             font-size: 1rem;
             transition: var(--transition);
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
         }
 
         .form-control:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
         }
 
         textarea.form-control {
@@ -671,7 +742,7 @@
         .footer {
             background: var(--dark-bg);
             color: white;
-            padding: 60px 0 30px;
+            padding: 80px 0 30px;
         }
 
         .footer-grid {
@@ -789,21 +860,22 @@
         }
 
         .contact-option {
-            background: white;
+            background: var(--dark-bg);
             padding: 15px 20px;
             border-radius: 50px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             display: flex;
             align-items: center;
             gap: 12px;
             text-decoration: none;
             transition: var(--transition);
             width: 220px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .contact-option:hover {
             transform: translateX(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
 
         .contact-option i {
@@ -812,7 +884,7 @@
 
         .contact-option span {
             font-weight: 500;
-            color: var(--text-color);
+            color: white;
         }
 
         /* Animations */
@@ -848,23 +920,48 @@
         }
 
         /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+            
+            .process-step:nth-child(2)::after {
+                display: block;
+                top: auto;
+                bottom: -30px;
+                right: 50%;
+                width: 2px;
+                height: 40px;
+                transform: translateX(50%);
+            }
+        }
+
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
             
             .section {
-                padding: 60px 0;
+                padding: 80px 0;
             }
             
             .section-title h2 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 768px) {
             .hero {
-                padding: 150px 5% 80px;
+                padding: 180px 5% 100px;
             }
             
             .hero h1 {
@@ -885,21 +982,20 @@
                 text-align: center;
             }
             
-            .process-steps::before {
-                left: 25px;
+            .services-grid {
+                grid-template-columns: 1fr;
             }
             
-            .process-step {
-                padding-left: 60px;
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 30px;
             }
             
-            .step-number {
-                width: 50px;
-                height: 50px;
-                font-size: 1.3rem;
+            .process-step:nth-child(2)::after {
+                display: none;
             }
             
-            .stats-grid {
+            .testimonials-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -924,7 +1020,7 @@
             }
             
             .section-title h2 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             
             .counter {
@@ -955,7 +1051,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">LeFind Digital Media</div>
+            <div class="logo">Click<span>dera</span></div>
             <button class="menu-btn" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
                 Menu
@@ -1001,7 +1097,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section - Enhanced -->
     <section class="section services" id="services">
         <div class="container">
             <div class="section-title">
@@ -1015,6 +1111,7 @@
                     </div>
                     <h3>Influencer Marketing</h3>
                     <p>Strategic brand partnerships with top influencers to amplify your reach and credibility in your industry.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -1022,6 +1119,7 @@
                     </div>
                     <h3>Video Editing</h3>
                     <p>Professional post-production, animation, and video marketing services to engage your audience.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -1029,6 +1127,7 @@
                     </div>
                     <h3>Social Media Management</h3>
                     <p>Complete platform management, content creation, and analytics to grow your social presence.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -1036,6 +1135,7 @@
                     </div>
                     <h3>Website Development</h3>
                     <p>Responsive, high-performance websites built with modern technologies to convert visitors.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -1043,6 +1143,7 @@
                     </div>
                     <h3>Lead Generation</h3>
                     <p>Targeted campaigns and conversion optimization strategies to generate quality leads for your business.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -1050,6 +1151,7 @@
                     </div>
                     <h3>Review Management</h3>
                     <p>Comprehensive reputation management including app reviews, map reviews, and brand monitoring.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -1057,6 +1159,7 @@
                     </div>
                     <h3>GMB Optimization</h3>
                     <p>Google My Business profile setup, optimization, and local SEO to boost your local visibility.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -1064,12 +1167,13 @@
                     </div>
                     <h3>PPC Advertising</h3>
                     <p>Strategic paid advertising campaigns on Google, Facebook, Instagram, and LinkedIn for maximum ROI.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
+    <!-- Process Section - Enhanced -->
     <section class="section process" id="process">
         <div class="container">
             <div class="section-title">
@@ -1109,27 +1213,48 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section - Enhanced -->
     <section class="section testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>What Our Clients Say</h2>
+                <h2>Client Success Stories</h2>
                 <p>Hear from businesses that have transformed their digital presence with us</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>LeFind Digital Media completely transformed our social media presence. Our engagement rates have tripled and we're seeing consistent lead generation from their strategies.</p>
+                        <p>Clickdera completely transformed our social media presence. Our engagement rates have tripled and we're seeing consistent lead generation from their strategies. Their team is responsive, creative, and truly understands our industry.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>CEO, TechSolutions</p>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>The influencer marketing campaign delivered exceptional results, with a 5x return on our investment. Their team is professional, creative, and results-driven.</p>
+                        <p>The influencer marketing campaign delivered exceptional results, with a 5x return on our investment. Their network of influencers and campaign execution was flawless. We've already signed up for another campaign!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SP</div>
+                        <div class="author-info">
+                            <h4>Sunita Patel</h4>
+                            <p>Marketing Director, FashionHub</p>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>Our website redesign and SEO strategy has increased organic traffic by 300% in just 6 months. LeFind understands digital marketing at a deep level.</p>
+                        <p>Our website redesign and SEO strategy has increased organic traffic by 300% in just 6 months. Clickdera understands digital marketing at a deep level. Their technical expertise and strategic approach have been invaluable.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <h4>Anil Mehta</h4>
+                            <p>Founder, EduTech Solutions</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1156,7 +1281,7 @@
         </div>
     </section>
 
-    <!-- Contact Section - Improved -->
+    <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
             <div class="section-title">
@@ -1166,7 +1291,7 @@
             <div class="contact-container">
                 <div class="contact-column form-column">
                     <div class="contact-form">
-                        <form id="contactForm" action="https://formsubmit.co/lefinddigitals@gmail.com" method="POST">
+                        <form id="contactForm" action="https://formsubmit.co/sales@clickdera.in" method="POST">
                             <input type="hidden" name="_subject" value="New Contact Form Submission">
                             <input type="hidden" name="_template" value="table">
                             <div class="form-group">
@@ -1231,7 +1356,7 @@
                                 </div>
                                 <div class="contact-details">
                                     <h4>Email</h4>
-                                    <p><a href="mailto:contact@lefinddigitalmedia.site">contact@lefinddigitalmedia.site</a></p>
+                                    <p><a href="mailto:sales@clickdera.in">sales@clickdera.in</a></p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
@@ -1276,7 +1401,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>LeFind Digital Media</h3>
+                    <h3>Clickdera</h3>
                     <p>Your trusted partner for comprehensive digital marketing solutions that drive growth and deliver measurable results.</p>
                     <div class="social-media" style="justify-content: flex-start; margin-top: 20px;">
                         <a href="https://www.instagram.com/lefinddigitalmedia?igsh=cjZrMW1qZWlleTZ1" target="_blank" class="social-icon instagram" style="width: 40px; height: 40px; font-size: 1.2rem;">
@@ -1315,13 +1440,13 @@
                     <ul class="footer-links">
                         <li><a href="#"><i class="fas fa-map-marker-alt"></i> Jitali Ankleshwar, Bharuch, Gujarat</a></li>
                         <li><a href="tel:+919979669552"><i class="fas fa-phone"></i> +91 99796 69552</a></li>
-                        <li><a href="mailto:contact@lefinddigitalmedia.site"><i class="fas fa-envelope"></i> contact@lefinddigitalmedia.site</a></li>
+                        <li><a href="mailto:sales@clickdera.in"><i class="fas fa-envelope"></i> sales@clickdera.in</a></li>
                         <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 LeFind Digital Media. All rights reserved.</p>
+                <p>&copy; 2024 Clickdera. All rights reserved.</p>
                 <p>Registered Office: Jitali Ankleshwar, Bharuch, Gujarat, India</p>
             </div>
         </div>
@@ -1338,7 +1463,7 @@
                 <i class="fas fa-phone fa-lg" style="color: var(--primary-color);"></i>
                 <span>Call Us</span>
             </a>
-            <a href="mailto:contact@lefinddigitalmedia.site" class="contact-option">
+            <a href="mailto:sales@clickdera.in" class="contact-option">
                 <i class="fas fa-envelope fa-lg" style="color: var(--primary-color);"></i>
                 <span>Send Email</span>
             </a>
